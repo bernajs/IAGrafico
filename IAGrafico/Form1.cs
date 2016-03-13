@@ -102,7 +102,7 @@ namespace IAGrafico
         }
         public void Arriba()
         {
-            if ((posicioni - 1) >= 0)
+            if ((posicioni - 1) >= 1)
             {
 
                 for (int i = 0; i < 3; i++)
@@ -111,7 +111,7 @@ namespace IAGrafico
                     {
                         //System.out.print(nodoAbajo[i][j] + " ");
                         Console.Write(nodoArriba[i, j] + " ");
-                        if (nodoArriba[i, j] == 0)
+                        if (nodoArriba[i, j] == 0 && i >= 1)
                         {
                                 posicioni = i;
                                 posicionj = j;
@@ -119,6 +119,8 @@ namespace IAGrafico
                             nodoArriba[posicioni - 1, posicionj] = 0;
                             nodoArriba[posicioni, posicionj] = aux;
                             arriba = diferencias(nodoArriba, nodoMeta);
+                            i = 2;
+                            j = 2;
                         }
                     }
                 }
@@ -126,9 +128,9 @@ namespace IAGrafico
                     //nodoArriba[posicioni - 1, posicionj] = 0;
                     //nodoArriba[posicioni, posicionj] = aux;
                     // arriba = diferencias(nodoArriba, nodoMeta);
-                    Console.WriteLine("Arriba: " + arriba);
+                    //Console.WriteLine("Arriba: " + arriba);
                     //System.out.println("arriba: " + arriba);
-                    if (arriba == 0)
+                   /* if (arriba == 0)
                     {
                         for (int i = 0; i < 3; i++)
                         {
@@ -141,7 +143,7 @@ namespace IAGrafico
                             Console.WriteLine("");
                         }
                         //break;
-                    }
+                    }*/
 
                 }
         }
@@ -149,10 +151,30 @@ namespace IAGrafico
 
         public void Derecha()
         {
-            if (posicionj + 1 <= 2) {
+            if (posicionj + 1 <= 1) {
+
+                                for (int i = 0; i < 3; i++)
+                {
+                    for (int j = 0; j < 3; j++)
+                    {
+                        //System.out.print(nodoAbajo[i][j] + " ");
+                        Console.Write(nodoArriba[i, j] + " ");
+                        if (nodoDerecha[i, j] == 0 && j <= 1)
+                        {
+                                posicioni = i;
+                                posicionj = j;
+                                aux = nodoDerecha[posicioni, posicionj + 1];
+                                nodoDerecha[posicioni, posicionj + 1] = 0;
+                                nodoDerecha[posicioni, posicionj] = aux;
+                                derecha = diferencias(nodoDerecha, nodoMeta);
+                                i = 2;
+                                j = 2;
+                        }
+                    }
+                }
 
 
-                aux = nodoDerecha[posicioni,posicionj + 1];
+                /*aux = nodoDerecha[posicioni,posicionj + 1];
                 nodoDerecha[posicioni,posicionj + 1] = 0;
                 nodoDerecha[posicioni,posicionj] = aux;
                 derecha = diferencias(nodoDerecha, nodoMeta);
@@ -168,15 +190,36 @@ namespace IAGrafico
                         //System.out.println("");
                     }
                     //break;
-                }
+                }*/
             }
         }
 
         public void Abajo()
         {
-                        if (posicioni + 1 <= 2) {
+                        if (posicioni + 1 <= 1) {
 
-                aux = nodoAbajo[posicioni + 1,posicionj];
+                            for (int i = 0; i < 3; i++)
+                            {
+                                for (int j = 0; j < 3; j++)
+                                {
+                                    //System.out.print(nodoAbajo[i][j] + " ");
+                                    Console.Write(nodoArriba[i, j] + " ");
+                                    if (nodoAbajo[i, j] == 0 && i <= 1)
+                                    {
+                                        posicioni = i;
+                                        posicionj = j;
+                                        aux = nodoAbajo[posicioni + 1, posicionj];
+
+                                        nodoAbajo[posicioni + 1, posicionj] = 0;
+                                        nodoAbajo[posicioni, posicionj] = aux;
+                                        abajo = diferencias(nodoAbajo, nodoMeta);
+                                        i = 2;
+                                        j = 2;
+                                    }
+                                }
+                            }
+
+                /*aux = nodoAbajo[posicioni + 1,posicionj];
                 nodoAbajo[posicioni + 1,posicionj] = 0;
                 nodoAbajo[posicioni,posicionj] = aux;
                 abajo = diferencias(nodoAbajo, nodoMeta);
@@ -192,16 +235,36 @@ namespace IAGrafico
                         Console.WriteLine("");
                     }
                     //break;
-                }
+                }*/
 
             }
         }
 
         public void Izquierda()
         {
-                        if (posicionj - 1 >= 0) {
+                        if (posicionj - 1 >= 1) {
 
-                aux = nodoIzquierda[posicioni,posicionj - 1];
+                            for (int i = 0; i < 3; i++)
+                            {
+                                for (int j = 0; j < 3; j++)
+                                {
+                                    //System.out.print(nodoAbajo[i][j] + " ");
+                                    Console.Write(nodoArriba[i, j] + " ");
+                                    if (nodoIzquierda[i, j] == 0 && j >= 1)
+                                    {
+                                        posicioni = i;
+                                        posicionj = j;
+                                        aux = nodoIzquierda[posicioni, posicionj - 1];
+                                        nodoIzquierda[posicioni, posicionj - 1] = 0;
+                                        nodoIzquierda[posicioni, posicionj] = aux;
+                                        izquierda = diferencias(nodoIzquierda, nodoMeta);
+                                        i = 2;
+                                        j = 2;
+                                    }
+                                }
+                            }
+
+                /*aux = nodoIzquierda[posicioni,posicionj - 1];
                 nodoIzquierda[posicioni,posicionj - 1] = 0;
                 nodoIzquierda[posicioni,posicionj] = aux;
                 izquierda = diferencias(nodoIzquierda, nodoMeta);
@@ -217,7 +280,7 @@ namespace IAGrafico
                         //System.out.println("");
                     }
                     //break;
-                }
+                }*/
             }
         }
 
@@ -245,15 +308,9 @@ namespace IAGrafico
                         //System.out.print(nodoAbajo[i][j] + " ");
                         Console.Write(nodoArriba[i,j] + " ");
                         if (nodoArriba[i,j] == 0) {
-                            if (posicioni == 2)
-                            {
 
-                            }
-                            else
-                            {
                             posicioni = i;
                             posicionj = j;
-                            }
                         }
                         nodoAbajo[i,j] = nodoArriba[i,j];
                         nodoIzquierda[i,j] = nodoArriba[i,j];
@@ -281,15 +338,8 @@ namespace IAGrafico
                         Console.Write(nodoDerecha[i,j] + " ");
                         //System.out.print(nodoArriba[i][j] + " ");
                         if (nodoDerecha[i,j] == 0) {
-                            if (posicionj == 2)
-                            {
-
-                            }
-                            else
-                            {
                             posicioni = i;
                             posicionj = j;
-                            }
                         }
                         nodoAbajo[i,j] = nodoDerecha[i,j];
                         nodoArriba[i,j] = nodoDerecha[i,j];
@@ -319,15 +369,8 @@ namespace IAGrafico
                         //System.out.print(nodoIzquierda[i][j] + " ");
                         Console.Write(nodoAbajo[i,j] + " ");
                         if (nodoAbajo[i,j] == 0) {
-                            if (posicioni == 0)
-                            {
-
-                            }
-                            else
-                            {
                             posicioni = i;
                             posicionj = j;
-                            }
                         }
                         nodoIzquierda[i,j] = nodoAbajo[i,j];
                         nodoArriba[i,j] = nodoAbajo[i,j];
@@ -357,16 +400,8 @@ namespace IAGrafico
                         //System.out.print(nodoDerecha[i][j] + " ");
                         Console.Write(nodoIzquierda[i,j] + " ");
                         if (nodoIzquierda[i,j] == 0) {
-                            if (posicionj == 0)
-                            {
-
-                            }
-                            else
-                            {
                             posicioni = i;
                             posicionj = j;
-                            }
-
                         }
                         nodoAbajo[i,j] = nodoIzquierda[i,j];
                         nodoArriba[i,j] = nodoIzquierda[i,j];
