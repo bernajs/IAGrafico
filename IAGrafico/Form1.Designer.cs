@@ -63,6 +63,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.estado = new System.Windows.Forms.Label();
+            this.nodos = new System.Windows.Forms.ListBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,126 +94,126 @@
             // 
             // ni00
             // 
-            this.ni00.Location = new System.Drawing.Point(30, 58);
+            this.ni00.Location = new System.Drawing.Point(161, 61);
             this.ni00.Name = "ni00";
             this.ni00.Size = new System.Drawing.Size(25, 20);
             this.ni00.TabIndex = 1;
             // 
             // ni01
             // 
-            this.ni01.Location = new System.Drawing.Point(61, 58);
+            this.ni01.Location = new System.Drawing.Point(192, 61);
             this.ni01.Name = "ni01";
             this.ni01.Size = new System.Drawing.Size(25, 20);
             this.ni01.TabIndex = 2;
             // 
             // ni02
             // 
-            this.ni02.Location = new System.Drawing.Point(92, 58);
+            this.ni02.Location = new System.Drawing.Point(223, 61);
             this.ni02.Name = "ni02";
             this.ni02.Size = new System.Drawing.Size(25, 20);
             this.ni02.TabIndex = 3;
             // 
             // ni10
             // 
-            this.ni10.Location = new System.Drawing.Point(30, 84);
+            this.ni10.Location = new System.Drawing.Point(161, 87);
             this.ni10.Name = "ni10";
             this.ni10.Size = new System.Drawing.Size(25, 20);
             this.ni10.TabIndex = 4;
             // 
             // ni11
             // 
-            this.ni11.Location = new System.Drawing.Point(61, 84);
+            this.ni11.Location = new System.Drawing.Point(192, 87);
             this.ni11.Name = "ni11";
             this.ni11.Size = new System.Drawing.Size(25, 20);
             this.ni11.TabIndex = 5;
             // 
             // ni12
             // 
-            this.ni12.Location = new System.Drawing.Point(92, 84);
+            this.ni12.Location = new System.Drawing.Point(223, 87);
             this.ni12.Name = "ni12";
             this.ni12.Size = new System.Drawing.Size(25, 20);
             this.ni12.TabIndex = 6;
             // 
             // ni20
             // 
-            this.ni20.Location = new System.Drawing.Point(30, 110);
+            this.ni20.Location = new System.Drawing.Point(161, 113);
             this.ni20.Name = "ni20";
             this.ni20.Size = new System.Drawing.Size(25, 20);
             this.ni20.TabIndex = 7;
             // 
             // ni21
             // 
-            this.ni21.Location = new System.Drawing.Point(61, 110);
+            this.ni21.Location = new System.Drawing.Point(192, 113);
             this.ni21.Name = "ni21";
             this.ni21.Size = new System.Drawing.Size(25, 20);
             this.ni21.TabIndex = 8;
             // 
             // ni22
             // 
-            this.ni22.Location = new System.Drawing.Point(92, 110);
+            this.ni22.Location = new System.Drawing.Point(223, 113);
             this.ni22.Name = "ni22";
             this.ni22.Size = new System.Drawing.Size(25, 20);
             this.ni22.TabIndex = 9;
             // 
             // nm22
             // 
-            this.nm22.Location = new System.Drawing.Point(217, 110);
+            this.nm22.Location = new System.Drawing.Point(348, 113);
             this.nm22.Name = "nm22";
             this.nm22.Size = new System.Drawing.Size(25, 20);
             this.nm22.TabIndex = 18;
             // 
             // nm21
             // 
-            this.nm21.Location = new System.Drawing.Point(186, 110);
+            this.nm21.Location = new System.Drawing.Point(317, 113);
             this.nm21.Name = "nm21";
             this.nm21.Size = new System.Drawing.Size(25, 20);
             this.nm21.TabIndex = 17;
             // 
             // nm20
             // 
-            this.nm20.Location = new System.Drawing.Point(155, 110);
+            this.nm20.Location = new System.Drawing.Point(286, 113);
             this.nm20.Name = "nm20";
             this.nm20.Size = new System.Drawing.Size(25, 20);
             this.nm20.TabIndex = 16;
             // 
             // nm12
             // 
-            this.nm12.Location = new System.Drawing.Point(217, 84);
+            this.nm12.Location = new System.Drawing.Point(348, 87);
             this.nm12.Name = "nm12";
             this.nm12.Size = new System.Drawing.Size(25, 20);
             this.nm12.TabIndex = 15;
             // 
             // nm11
             // 
-            this.nm11.Location = new System.Drawing.Point(186, 84);
+            this.nm11.Location = new System.Drawing.Point(317, 87);
             this.nm11.Name = "nm11";
             this.nm11.Size = new System.Drawing.Size(25, 20);
             this.nm11.TabIndex = 14;
             // 
             // nm10
             // 
-            this.nm10.Location = new System.Drawing.Point(155, 84);
+            this.nm10.Location = new System.Drawing.Point(286, 87);
             this.nm10.Name = "nm10";
             this.nm10.Size = new System.Drawing.Size(25, 20);
             this.nm10.TabIndex = 13;
             // 
             // nm02
             // 
-            this.nm02.Location = new System.Drawing.Point(217, 58);
+            this.nm02.Location = new System.Drawing.Point(348, 61);
             this.nm02.Name = "nm02";
             this.nm02.Size = new System.Drawing.Size(25, 20);
             this.nm02.TabIndex = 12;
             // 
             // nm01
             // 
-            this.nm01.Location = new System.Drawing.Point(186, 58);
+            this.nm01.Location = new System.Drawing.Point(317, 61);
             this.nm01.Name = "nm01";
             this.nm01.Size = new System.Drawing.Size(25, 20);
             this.nm01.TabIndex = 11;
             // 
             // nm00
             // 
-            this.nm00.Location = new System.Drawing.Point(155, 58);
+            this.nm00.Location = new System.Drawing.Point(286, 61);
             this.nm00.Name = "nm00";
             this.nm00.Size = new System.Drawing.Size(25, 20);
             this.nm00.TabIndex = 10;
@@ -220,7 +221,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 33);
+            this.label1.Location = new System.Drawing.Point(158, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 13);
             this.label1.TabIndex = 19;
@@ -230,7 +231,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(150, 33);
+            this.label2.Location = new System.Drawing.Point(281, 36);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 13);
             this.label2.TabIndex = 20;
@@ -239,7 +240,7 @@
             // na22
             // 
             this.na22.Enabled = false;
-            this.na22.Location = new System.Drawing.Point(152, 287);
+            this.na22.Location = new System.Drawing.Point(283, 290);
             this.na22.Name = "na22";
             this.na22.Size = new System.Drawing.Size(25, 20);
             this.na22.TabIndex = 29;
@@ -247,7 +248,7 @@
             // na21
             // 
             this.na21.Enabled = false;
-            this.na21.Location = new System.Drawing.Point(121, 287);
+            this.na21.Location = new System.Drawing.Point(252, 290);
             this.na21.Name = "na21";
             this.na21.Size = new System.Drawing.Size(25, 20);
             this.na21.TabIndex = 28;
@@ -255,7 +256,7 @@
             // na20
             // 
             this.na20.Enabled = false;
-            this.na20.Location = new System.Drawing.Point(90, 287);
+            this.na20.Location = new System.Drawing.Point(221, 290);
             this.na20.Name = "na20";
             this.na20.Size = new System.Drawing.Size(25, 20);
             this.na20.TabIndex = 27;
@@ -263,7 +264,7 @@
             // na12
             // 
             this.na12.Enabled = false;
-            this.na12.Location = new System.Drawing.Point(152, 261);
+            this.na12.Location = new System.Drawing.Point(283, 264);
             this.na12.Name = "na12";
             this.na12.Size = new System.Drawing.Size(25, 20);
             this.na12.TabIndex = 26;
@@ -271,7 +272,7 @@
             // na11
             // 
             this.na11.Enabled = false;
-            this.na11.Location = new System.Drawing.Point(121, 261);
+            this.na11.Location = new System.Drawing.Point(252, 264);
             this.na11.Name = "na11";
             this.na11.Size = new System.Drawing.Size(25, 20);
             this.na11.TabIndex = 25;
@@ -279,7 +280,7 @@
             // na10
             // 
             this.na10.Enabled = false;
-            this.na10.Location = new System.Drawing.Point(90, 261);
+            this.na10.Location = new System.Drawing.Point(221, 264);
             this.na10.Name = "na10";
             this.na10.Size = new System.Drawing.Size(25, 20);
             this.na10.TabIndex = 24;
@@ -287,7 +288,7 @@
             // na02
             // 
             this.na02.Enabled = false;
-            this.na02.Location = new System.Drawing.Point(152, 235);
+            this.na02.Location = new System.Drawing.Point(283, 238);
             this.na02.Name = "na02";
             this.na02.Size = new System.Drawing.Size(25, 20);
             this.na02.TabIndex = 23;
@@ -295,7 +296,7 @@
             // na01
             // 
             this.na01.Enabled = false;
-            this.na01.Location = new System.Drawing.Point(121, 235);
+            this.na01.Location = new System.Drawing.Point(252, 238);
             this.na01.Name = "na01";
             this.na01.Size = new System.Drawing.Size(25, 20);
             this.na01.TabIndex = 22;
@@ -303,7 +304,7 @@
             // na00
             // 
             this.na00.Enabled = false;
-            this.na00.Location = new System.Drawing.Point(90, 235);
+            this.na00.Location = new System.Drawing.Point(221, 238);
             this.na00.Name = "na00";
             this.na00.Size = new System.Drawing.Size(25, 20);
             this.na00.TabIndex = 21;
@@ -311,7 +312,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(102, 210);
+            this.label3.Location = new System.Drawing.Point(233, 213);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 13);
             this.label3.TabIndex = 30;
@@ -319,7 +320,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(102, 146);
+            this.button1.Location = new System.Drawing.Point(233, 149);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 31;
@@ -330,17 +331,26 @@
             // estado
             // 
             this.estado.AutoSize = true;
-            this.estado.Location = new System.Drawing.Point(243, 186);
+            this.estado.Location = new System.Drawing.Point(12, 213);
             this.estado.Name = "estado";
             this.estado.Size = new System.Drawing.Size(40, 13);
             this.estado.TabIndex = 32;
             this.estado.Text = "Estado";
+            // 
+            // nodos
+            // 
+            this.nodos.FormattingEnabled = true;
+            this.nodos.Location = new System.Drawing.Point(12, 87);
+            this.nodos.Name = "nodos";
+            this.nodos.Size = new System.Drawing.Size(120, 95);
+            this.nodos.TabIndex = 33;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(459, 400);
+            this.Controls.Add(this.nodos);
             this.Controls.Add(this.estado);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
@@ -422,6 +432,7 @@
         private System.Windows.Forms.ToolStripMenuItem inicioToolStripMenuItem;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label estado;
+        private System.Windows.Forms.ListBox nodos;
     }
 }
 
