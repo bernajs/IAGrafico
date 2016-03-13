@@ -1,0 +1,9 @@
+c:\users\luisg\onedrive\documentos\visual studio 2012\Projects\IAGrafico\IAGrafico\bin\Debug\IAGrafico.exe.config
+c:\users\luisg\onedrive\documentos\visual studio 2012\Projects\IAGrafico\IAGrafico\bin\Debug\IAGrafico.exe
+c:\users\luisg\onedrive\documentos\visual studio 2012\Projects\IAGrafico\IAGrafico\bin\Debug\IAGrafico.pdb
+c:\users\luisg\onedrive\documentos\visual studio 2012\Projects\IAGrafico\IAGrafico\obj\Debug\IAGrafico.csprojResolveAssemblyReference.cache
+c:\users\luisg\onedrive\documentos\visual studio 2012\Projects\IAGrafico\IAGrafico\obj\Debug\IAGrafico.Form1.resources
+c:\users\luisg\onedrive\documentos\visual studio 2012\Projects\IAGrafico\IAGrafico\obj\Debug\IAGrafico.Properties.Resources.resources
+c:\users\luisg\onedrive\documentos\visual studio 2012\Projects\IAGrafico\IAGrafico\obj\Debug\IAGrafico.csproj.GenerateResource.Cache
+c:\users\luisg\onedrive\documentos\visual studio 2012\Projects\IAGrafico\IAGrafico\obj\Debug\IAGrafico.exe
+c:\users\luisg\onedrive\documentos\visual studio 2012\Projects\IAGrafico\IAGrafico\obj\Debug\IAGrafico.pdb
